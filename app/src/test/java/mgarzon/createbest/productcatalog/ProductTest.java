@@ -25,7 +25,7 @@ public class ProductTest {
         // ou on peut changer la clause dans la méthode assertEqual() de 0 à 180. Dans l'exemple ci-bas,
         // je modifie le prix de "DELL MONITOR" après que l'objet a été instancié.
 
-        aProduct.setPrice((int)0);
+        aProduct.setPrice(Integer.parseInt("0"));
         assertEquals("Check the price of the product", "0", aProduct.getPrice());
     }
 
