@@ -29,7 +29,7 @@ public class ProductTest {
         // j'écrit 0 dans la méthode assertEquals sans guillemets.
 
         aProduct.setPrice(0);
-        assertEquals("Check the price of the product", 0, aProduct.getPrice());
+        assertEquals("Check the price of the product", "0", aProduct.getPrice());
     }
 
 
