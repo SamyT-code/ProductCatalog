@@ -20,16 +20,11 @@ public class ProductTest {
     public void checkProductPrice() {
         // I am making this test to fail
         Product aProduct = new Product("1", "DELL MONITOR", 180);
-        // La ligne 29 ci-dessous échoue initialement car le prix de "DELL MONITOR" est de 180 alors que
-        // le test vérifie si le prix est 0.
-        // De plus, il est écrit "0" comme si le prix était un String
-        // Pour y remédier, on peut soit changer le prix de "DELL MONITOR",
-        // ou on peut changer la clause dans la méthode assertEqual() de 0 à 180 sans guillemets). Dans l'exemple ci-bas,
-        // je modifie le prix de "DELL MONITOR" après que l'objet a été instancié et, puisque le prix doit
-        // j'écrit 0 dans la méthode assertEquals sans guillemets.
+
 
         //aProduct.setPrice(0);
-        assertEquals("Check the price of the product", "180.0", aProduct.getPrice());
+        //assertEquals("Check the price of the product", "180.0", aProduct.getPrice());
+        assertTrue(180 == aProduct.getPrice());
     }
 
 
