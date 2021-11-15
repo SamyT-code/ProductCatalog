@@ -28,8 +28,8 @@ public class ProductTest {
         // je modifie le prix de "DELL MONITOR" après que l'objet a été instancié et, puisque le prix doit
         // j'écrit 0 dans la méthode assertEquals sans guillemets.
 
-        aProduct.setPrice(0);
-        assertEquals("Check the price of the product", "0", aProduct.getPrice());
+        //aProduct.setPrice(0);
+        assertEquals("Check the price of the product", "180", aProduct.getPrice());
     }
 
 
